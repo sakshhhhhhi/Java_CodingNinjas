@@ -13,7 +13,9 @@ public class Sort01 {
                 arr[i] = temp;
                 nextZero += 1;
             }
+            
         }
+        
 		}
 	
 	public static void printArray(int[]arr) {
