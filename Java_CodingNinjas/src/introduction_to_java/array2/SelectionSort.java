@@ -9,6 +9,7 @@ public class SelectionSort {
 		int i;
 
 		for(  i =0;i<n-1;i++) {
+				@SuppressWarnings("unused")
 				int min =Integer.MAX_VALUE;
 				int minIndex=i;
 				for(int j=i+1;j<n;j++) {
