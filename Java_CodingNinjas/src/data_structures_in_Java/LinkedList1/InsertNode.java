@@ -10,14 +10,14 @@ public class InsertNode {
 		}
 		else {
 		int count=0;
-		Node<Integer>prev=head;
-		while(count<pos-1&&prev!=null) {
+		Node<Integer>temp=head;
+		while(count<pos-1&&temp!=null) {
 			count++;
-			prev=prev.next;
+			temp=temp.next;
 		}
-		if(prev!=null) {
-		value.next=prev.next;
-		prev.next=value;
+		if(temp!=null) {
+		value.next=temp.next;
+		temp.next=value;
 		}
 		return head;
 		}
