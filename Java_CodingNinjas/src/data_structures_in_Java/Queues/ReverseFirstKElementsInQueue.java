@@ -30,7 +30,7 @@ public class ReverseFirstKElementsInQueue {
 		input.add(80);
 		input.add(90);
 		
-		System.out.print(reverseKElements(input,4));
+		System.out.print(reverseKElements(input,9));
 
 	}
 
