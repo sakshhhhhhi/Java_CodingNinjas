@@ -16,7 +16,7 @@ public class PrintNodeAtDistanceK {
         int rootData=root.data;
         if (rootData==node)
         {
-            printNodesAtDistanceK(root, k);
+            printNodeAtDistanceK(root, k);
             return 0;
         }
         
@@ -32,7 +32,7 @@ public class PrintNodeAtDistanceK {
             else
             {
                 rightSubTreeDist=k-(leftSubTreeDist+1)-1;
-                printNodesAtDistanceK(root.right, rightSubTreeDist);
+                printNodeAtDistanceK(root.right, rightSubTreeDist);
             }
             return leftSubTreeDist+1;
         }
@@ -47,14 +47,14 @@ public class PrintNodeAtDistanceK {
             else
             {
                 leftSubTreeDist=k-(rightSubTreeDist+1)-1;
-                printNodesAtDistanceK(root.left, leftSubTreeDist);
+                printNodeAtDistanceK(root.left, leftSubTreeDist);
             }
             return rightSubTreeDist+1;
         }
         return -1;
     }
     
-    private static void printNodesAtDistanceK(BinaryTreeNode<Integer> root, int k)
+    private static void printNodeAtDistanceK(BinaryTreeNode<Integer> root, int k)
     {
         if (root==null || k<0)
         	return;
@@ -65,8 +65,8 @@ public class PrintNodeAtDistanceK {
             return; 
         }
         
-        printNodesAtDistanceK(root.left,k-1);
-        printNodesAtDistanceK(root.right,k-1);
+        printNodeAtDistanceK(root.left,k-1);
+        printNodeAtDistanceK(root.right,k-1);
     }
 
 }
