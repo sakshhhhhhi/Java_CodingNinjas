@@ -3,7 +3,7 @@ package data_structures_in_Java.BST1;
 import data_structures_in_Java.BinaryTrees1.BinaryTreeNode;
 
 public class SearchInBST {
-	public static boolean searchInBST(BinaryTreeNode<Integer> root, int k) {
+	public static boolean searchInBS(BinaryTreeNode<Integer> root, int k) {
 		if(root==null) {
 			return false;
 		}
@@ -11,9 +11,9 @@ public class SearchInBST {
 			return true;
 		}
 		if(k<root.data) {
-			return searchInBST(root.left,k);
+			return searchInBS(root.left,k);
 		}
-		return searchInBST(root.right,k);
+		return searchInBS(root.right,k);
 	}
 
 }
