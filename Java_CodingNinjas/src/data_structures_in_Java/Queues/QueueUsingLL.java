@@ -67,8 +67,8 @@ public class QueueUsingLL<T> {
 		if(front==null) {
     		return -1;
     	}
-		int temp =front.data;
-		return temp;
+		int temps =front.data;
+		return temps;
     }
 
 	
