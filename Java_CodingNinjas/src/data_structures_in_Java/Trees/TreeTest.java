@@ -1,5 +1,4 @@
 package data_structures_in_Java.Trees;
-
 public class TreeTest {
 	public static void printTree(TreeNode<Integer> root) {
 		if(root==null) {
@@ -43,5 +42,6 @@ public class TreeTest {
 		printTreeDetailed(root);
 
 	}
+
 
 }
