@@ -6,8 +6,8 @@ import java.util.HashMap;
 public class PrintIntersection {
 	
 	public static void main(String[] args) {
-		int [] arr1 = {2,3,4,5};
-		int [] arr2 = {1,2,6,4};
+		int [] arr1 = {2,3,4,5,2,6};
+		int [] arr2 = {2,6,1,2,6,4};
 		printIntersection(arr1,arr2);
 	}
 
