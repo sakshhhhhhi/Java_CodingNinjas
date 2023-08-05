@@ -33,9 +33,9 @@ public class InplaceHeapSOrt {
 			if(minIndex == parentIndex) {
 				return;
 			}
-			int temp = arr[parentIndex];
+			int temp2 = arr[parentIndex];
 			arr[parentIndex]=arr[minIndex];
-			arr[minIndex]=temp;
+			arr[minIndex]=temp2;
 			parentIndex =minIndex;
 			leftChildIndex = parentIndex*2+1;
 			rightChildIndex = parentIndex*2+2;
