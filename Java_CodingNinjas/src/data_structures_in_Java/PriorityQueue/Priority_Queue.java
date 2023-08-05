@@ -74,6 +74,7 @@ public class Priority_Queue <T>{
 	public int size() {
 		return heap.size();
 	}
+	
 	public boolean isEmpty() {
 		if(size()==0) {
 			return true;
