@@ -1,10 +1,26 @@
 package data_structures_in_Java.TriesAndHuffman;
 import java.util.ArrayList;
+
+import data_structures_in_Java.TriesAndHuffman.PalindromePair.TrieNode;
 public class PatternMatching {
 	
 
+	public class TrieNode {
+		char data;
+		boolean isTerminating;
+		TrieNode children[];
+		int childCount;
+
+		public TrieNode(char data) {
+			this.data = data;
+			isTerminating = false;
+			children = new TrieNode[26];
+			childCount = 0;
+		}
+	}
 	public class Trie {
 
+	
 		private TrieNode root;
 		public int count;
 		public Trie() {
@@ -16,7 +32,7 @@ public class PatternMatching {
 		}
 		private void add(TrieNode root, String word){
 	        if(word.length() == 0){
-	            root.isTerminal= true;
+	            root.isTerminating= true;
 	            return;
 	        }		
 	        int childIndex = word.charAt(0) - 'a';
@@ -47,13 +63,16 @@ public class PatternMatching {
 
 
 		public boolean patternMatching(ArrayList<String> input, String pattern) {
+			String word ="";
+		
 			for(int i = 0;i<input.size();i++) {
-				String word = input.get(i);
+				word = input.get(i);
 			}
-			for(int j =0;j<word.length;j++) {
-				add(word.substring(j));
+			for(int j =0;j<word.length();j++) {
+				add(pattern.substring(j));
 			}
 			return search(root,pattern);
 		}
 
+}
 }
