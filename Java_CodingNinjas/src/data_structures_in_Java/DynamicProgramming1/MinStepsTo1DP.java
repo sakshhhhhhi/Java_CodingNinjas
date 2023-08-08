@@ -1,4 +1,4 @@
-package data_structures_in_Java.DynamicProgramming;
+package data_structures_in_Java.DynamicProgramming1;
 
 public class MinStepsTo1DP {
 

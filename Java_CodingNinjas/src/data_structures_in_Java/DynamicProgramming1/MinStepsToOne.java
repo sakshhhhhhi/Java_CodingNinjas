@@ -1,4 +1,4 @@
-package data_structures_in_Java.DynamicProgramming;
+package data_structures_in_Java.DynamicProgramming1;
 
 public class MinStepsToOne {
 	public static int countMinStepsToOne(int n) {
