@@ -7,7 +7,7 @@ public class MirrorBinaryTree {
 		if(root==null){
 			return;
 		}
-		if(root.left==null||root.right==null) {
+		if(root.left==null&&root.right==null) {
 			return;
 		}
 		mirrorBinaryTree(root.left);

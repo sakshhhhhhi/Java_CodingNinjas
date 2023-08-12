@@ -8,8 +8,6 @@ public class PrintNodesAtDepthK {
 		if(k==0) {
 			System.out.print(root.data+" ");
 			return;
-			
-			
 		}
 		printAtdepthK(root.left,k-1);
 		printAtdepthK(root.right,k-1);
