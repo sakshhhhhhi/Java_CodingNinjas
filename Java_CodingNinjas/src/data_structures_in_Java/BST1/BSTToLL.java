@@ -6,8 +6,9 @@ import data_structures_in_Java.LinkedList2.Node;
 public class BSTToLL {
 	public static Node<Integer> constructLinkedList(BinaryTreeNode<Integer> root) {
 		Pair ans=helper(root);
-	        return ans.head;}
-	    public static Pair helper(BinaryTreeNode<Integer> root){
+	        return ans.head;
+	}
+	public static Pair helper(BinaryTreeNode<Integer> root){
 	        if(root==null)
 	        {
 	            Pair output=new Pair();
@@ -19,16 +20,15 @@ public class BSTToLL {
 	        Node<Integer> newNode=new Node<>(root.data);
 	        Pair righttree=helper(root.right);
 	        Pair output=new Pair();
-	       if(lefttree.head!=null)
-	       {
+	        if(lefttree.head!=null){
 	           output.head=lefttree.head;
 	           lefttree.tail.next=newNode;
 	        
-	       }
+	        }
 	        else {
 	            output.head=newNode;
 	        }
-	    newNode.next=righttree.head;
+	        newNode.next=righttree.head;
 	        if(righttree.head==null)
 	        {
 	            output.tail=newNode;
