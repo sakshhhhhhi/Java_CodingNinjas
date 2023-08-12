@@ -22,12 +22,6 @@ public class KnapsackProblemR {
 		return maxValue;
 
 }
-		public static void main(String[] args)  {
-        
-        int[] weights = {1,2,4,5};
-        int[] values = {5,4,8,6};
-        int maxWeight=5, s = 4;
-        System.out.println(knapsack(weights, values, s, maxWeight));
-    }
-
 }
+
+
