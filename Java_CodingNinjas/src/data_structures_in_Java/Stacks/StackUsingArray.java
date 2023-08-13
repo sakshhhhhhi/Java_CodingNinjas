@@ -51,8 +51,5 @@ public class StackUsingArray {
 
 	public int size() {
 		return topElement++;
-		
 	}
-	
-
 }
