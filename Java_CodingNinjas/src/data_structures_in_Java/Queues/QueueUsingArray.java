@@ -30,10 +30,6 @@ public class QueueUsingArray {
     	if(size==0) {
     		front=0;
     	}
-//    	rear++;
-//    	if(rear==arr.length) {
-//    		rear =0;
-//    	}
     	rear =(rear+1)%arr.length;
 		arr[rear]=elem;
 		size++;
