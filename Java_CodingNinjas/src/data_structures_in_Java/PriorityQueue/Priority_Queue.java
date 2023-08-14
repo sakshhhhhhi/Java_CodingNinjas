@@ -15,7 +15,7 @@ public class Priority_Queue <T>{
 		
 		
 		while(childIndex>0) {
-			if(heap.get(childIndex).priority<heap.get(parentIndex).priority) {
+			if(heap.get(childIndex).priority < heap.get(parentIndex).priority) {
 				Element<T> temp = heap.get(childIndex);
 				heap.set(childIndex, heap.get(parentIndex));
 				heap.set(parentIndex, temp);
