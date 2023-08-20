@@ -1,6 +1,22 @@
 package data_structures_in_Java.Graphs1;
 import java.util.Scanner;
 public class AdjacencyMatrixImplementation {
+	
+	
+	public static void dftraversal(int adj[][]) {
+		boolean vis[] = new boolean[adj.length];
+		dftraversal(adj, 0 , vis);
+	}
+	private static void dftraversal(int[][] adj, int currentVertex, boolean[] vis) {
+		vis[currentVertex]= true;
+		System.out.print(currentVertex+" ");
+		for(int i =0;i<adj.length;i++) {
+			if(adj[currentVertex][i]==1 && vis[i]==false) {
+				dftraversal(adj,i,vis);
+			}
+		}
+		
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n =sc.nextInt();
@@ -18,6 +34,7 @@ public class AdjacencyMatrixImplementation {
 			}
 			System.out.println();
 		}
+		dftraversal(adj);
 	}
 
 }
