@@ -1,6 +1,4 @@
 package data_structures_in_Java.Graphs1;
-
-import java.util.*;
 import java.util.Scanner;
 
 public class HasPath {
@@ -10,7 +8,7 @@ public class HasPath {
 		}
 		vis[src] =true;
 		for(int i =0;i<graph.length;i++) {
-			if(!vis[i]&&hasPath(graph,i,dest,vis) && graph[src][i]==1) {
+			if(!vis[i] && hasPath(graph,i,dest,vis) && graph[src][i]==1) {
 				return true;
 			}
 		}
